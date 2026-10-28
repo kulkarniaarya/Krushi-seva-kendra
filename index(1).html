@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="विश्वजीत कृषी सेवा केंद्र, वडूज — शेतीसाठी खते, बियाणे आणि पीक संरक्षण उत्पादनांची डेमो वेबसाइट.">
+<title>विश्वजीत कृषी सेवा केंद्र | वडूज</title>
+<style>
+:root{--green:#176b3a;--dark:#104c2a;--lime:#d8efb0;--cream:#fbfff6;--gold:#f3b83f;--text:#203328;--muted:#607268}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--cream);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.topbar{background:var(--dark);color:#fff;text-align:center;padding:8px 14px;font-size:14px}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #103a2010}.nav{max-width:1160px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--dark);font-size:19px}.logo{display:grid;place-items:center;background:var(--lime);width:48px;height:48px;border-radius:15px;font-size:27px}
+nav{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:700}nav a:hover{color:var(--green)}.btn{display:inline-block;background:var(--green);color:white;padding:12px 18px;border-radius:12px;font-weight:700;border:0;cursor:pointer}.btn:hover{background:var(--dark)}.btn.secondary{background:#fff;color:var(--green);border:1px solid #b8d8c1}
+.hero{background:radial-gradient(circle at 85% 20%,#d9efb7 0,transparent 28%),linear-gradient(120deg,#f2f9e8,#fff 60%,#e8f4d9);overflow:hidden}
+.hero-inner{max-width:1160px;margin:auto;padding:68px 22px 62px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:36px}
+.eyebrow{display:inline-block;background:#e1f2cf;color:var(--dark);padding:7px 12px;border-radius:100px;font-size:13px;font-weight:800}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.18;margin:18px 0;color:var(--dark);letter-spacing:-1px}h1 span{color:#3d8b43}.hero p{font-size:18px;color:#4d6254;max-width:600px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-art{min-height:330px;display:grid;place-items:center;position:relative}.sun{position:absolute;width:250px;height:250px;background:#e7f5c9;border-radius:50%;right:7%;top:8%}.field{position:absolute;bottom:20px;width:100%;height:155px;background:linear-gradient(160deg,transparent 0 20%,#9cc76c 20% 37%,#6aa64f 37% 55%,#387e42 55%);clip-path:polygon(0 38%,45% 0,100% 30%,100% 100%,0 100%);border-radius:20px}
+.bag{position:relative;z-index:2;font-size:112px;filter:drop-shadow(0 16px 12px #1d5b2b30);transform:translateY(-8px)}.art-label{position:absolute;z-index:3;bottom:18px;left:10%;background:white;padding:12px 16px;border-radius:14px;box-shadow:0 10px 30px #234d251a;font-weight:800;color:var(--dark)}
+.trust{max-width:1100px;margin:-22px auto 0;position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 22px}.trust div{background:white;padding:17px;border-radius:15px;box-shadow:0 10px 28px #143e1a0c;text-align:center;font-weight:700}.trust b{display:block;font-size:23px;color:var(--green)}
+section{padding:66px 22px}.wrap{max-width:1100px;margin:auto}.section-head{text-align:center;max-width:680px;margin:0 auto 32px}.section-head h2{font-size:clamp(27px,4vw,38px);color:var(--dark);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e4eee2;border-radius:18px;padding:24px;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px #123b1a10}.icon{width:58px;height:58px;display:grid;place-items:center;background:#edf7df;border-radius:16px;font-size:31px}.card h3{margin:15px 0 5px;color:var(--dark)}.card p{color:var(--muted);margin:0;font-size:15px}
+.products{background:#f0f7e9}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:#fff;border-radius:16px;padding:20px;text-align:center;border:1px solid #e2edda}.product .picon{font-size:48px;background:#f5f9ef;border-radius:14px;padding:12px}.product h3{font-size:17px;margin:12px 0 4px}.product small{color:var(--muted)}.product .ask{display:block;margin-top:13px;color:var(--green);font-weight:800;font-size:14px}
+.notice{font-size:13px;color:#647367;margin-top:18px;text-align:center}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}.about-panel{background:linear-gradient(140deg,#1d713e,#104c2a);color:white;padding:30px;border-radius:22px}.about-panel h3{font-size:26px;margin-top:0}.about-panel p{color:#e0f1e2}.check{padding:0;list-style:none}.check li{margin:12px 0}.check li:before{content:"✓";font-weight:bold;color:#bce68c;margin-right:10px}
+.contact{background:#103f26;color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#d3e7d8}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{padding:26px;background:#ffffff10;border:1px solid #ffffff24;border-radius:18px}.contact-card h3{margin-top:0}.contact-card p{color:#d5e6d9}.contact .btn{background:var(--gold);color:#173a20}.contact .btn.secondary{background:transparent;color:#fff;border-color:#ffffff60}
+footer{background:#0a2d1b;color:#bcd1c1;text-align:center;padding:20px;font-size:13px}.demo-tag{display:inline-block;background:#fff2ce;color:#76510a;padding:5px 9px;border-radius:8px;font-size:12px;font-weight:800;margin-bottom:8px}
+@media(max-width:800px){.nav{flex-wrap:wrap}.nav nav{order:3;width:100%;overflow:auto;gap:16px;padding-bottom:3px}.nav .btn{padding:10px 12px}.hero-inner{grid-template-columns:1fr;padding-top:45px}.hero-art{min-height:260px}.trust{grid-template-columns:1fr;margin-top:14px}.cards{grid-template-columns:1fr 1fr}.product-grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.brand{font-size:15px}.logo{width:42px;height:42px}.hero p{font-size:16px}.cards{grid-template-columns:1fr}.product-grid{gap:10px}.product{padding:13px 8px}.product h3{font-size:15px}section{padding:48px 16px}.hero-inner{padding-left:16px;padding-right:16px}}
+</style>
+</head>
+<body>
+<div class="topbar">🌾 शेतकऱ्यांच्या प्रगतीसाठी — विश्वजीत कृषी सेवा केंद्र, वडूज</div>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home"><span class="logo">🌱</span><span>विश्वजीत कृषी सेवा केंद्र<small style="display:block;font-size:12px;color:#6b7d70;font-weight:600">वडूज, सातारा</small></span></a>
+    <nav><a href="#home">मुख्यपृष्ठ</a><a href="#services">आमच्या सेवा</a><a href="#products">उत्पादने</a><a href="#about">आमच्याबद्दल</a><a href="#contact">संपर्क</a></nav>
+    <a class="btn" href="#contact">संपर्क करा</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div>
+   <span class="demo-tag">डेमो वेबसाइट · ग्राहकांच्या पसंतीनुसार बदल शक्य</span><br>
+   <span class="eyebrow">🌿 शेतीसाठी योग्य मार्गदर्शन</span>
+   <h1>समृद्ध शेती,<br><span>उज्ज्वल भविष्य!</span></h1>
+   <p>विश्वजीत कृषी सेवा केंद्र, वडूज — शेतीसाठी आवश्यक उत्पादने आणि पीक व्यवस्थापनासाठी मदतीची माहिती एकाच ठिकाणी.</p>
+   <div class="actions"><a class="btn" href="#products">उत्पादने पाहा ↓</a><a class="btn secondary" href="#contact">दुकानाशी संपर्क</a></div>
+  </div>
+  <div class="hero-art" aria-label="शेतीचे चित्रात्मक डिझाइन"><div class="sun"></div><div class="field"></div><div class="bag">🌾</div><div class="art-label">🌱 शेतकरी समृद्धीचा संकल्प</div></div>
+ </div>
+</section>
+<div class="trust"><div><b>🌾</b>शेतीसाठी आवश्यक उत्पादने</div><div><b>🤝</b>ग्राहकाभिमुख सेवा</div><div><b>🌱</b>पीक व्यवस्थापनाची माहिती</div></div>
+<section id="services">
+ <div class="wrap">
+  <div class="section-head"><h2>आमच्या सेवा</h2><p>तुमच्या शेतीच्या गरजांसाठी उपयुक्त उत्पादने आणि माहिती.</p></div>
+  <div class="cards">
+   <article class="card"><div class="icon">🪴</div><h3>खते</h3><p>पिकांच्या गरजेनुसार उपलब्ध खतांच्या पर्यायांची माहिती.</p></article>
+   <article class="card"><div class="icon">🌱</div><h3>बियाणे</h3><p>हंगाम आणि पिकानुसार बियाण्यांच्या उपलब्धतेची चौकशी.</p></article>
+   <article class="card"><div class="icon">🛡️</div><h3>पीक संरक्षण</h3><p>कीड व रोग व्यवस्थापनासाठी उत्पादनांची माहिती. वापरापूर्वी लेबल व तज्ज्ञांचा सल्ला घ्या.</p></article>
+  </div>
+ </div>
+</section>
+<section class="products" id="products">
+ <div class="wrap">
+  <div class="section-head"><h2>आमची उत्पादने</h2><p>खालील उत्पादने ही नमुना कॅटेगरी आहेत. प्रत्यक्ष ब्रँड, स्टॉक आणि किंमती दुकानाकडून निश्चित कराव्यात.</p></div>
+  <div class="product-grid">
+   <article class="product"><div class="picon">🟩</div><h3>सेंद्रिय खते</h3><small>मातीच्या आरोग्यासाठी</small><a class="ask" href="#contact">उपलब्धता विचारा →</a></article>
+   <article class="product"><div class="picon">🧪</div><h3>दाणेदार / विद्राव्य खते</h3><small>विविध प्रकार</small><a class="ask" href="#contact">उपलब्धता विचारा →</a></article>
+   <article class="product"><div class="picon">🌾</div><h3>बियाणे</h3><small>हंगामानुसार</small><a class="ask" href="#contact">उपलब्धता विचारा →</a></article>
+   <article class="product"><div class="picon">🍃</div><h3>पीक संरक्षण उत्पादने</h3><small>लेबलनुसार वापर</small><a class="ask" href="#contact">उपलब्धता विचारा →</a></article>
+  </div>
+  <p class="notice">टीप: हे फक्त डेमो आहे. उत्पादनांची उपलब्धता, किंमती, ब्रँड आणि कृषी सल्ला दुकानाकडून पडताळूनच प्रकाशित करावा.</p>
+ </div>
+</section>
+<section id="about">
+ <div class="wrap about-grid">
+  <div><span class="eyebrow">आमच्याबद्दल</span><h2 style="font-size:34px;color:var(--dark);line-height:1.25">विश्वास, सेवा आणि शेतीची प्रगती</h2><p style="color:var(--muted)">विश्वजीत कृषी सेवा केंद्र, वडूज यांच्यासाठी तयार केलेली ही नमुना वेबसाइट आहे. ग्राहकांना दुकानाची माहिती, उत्पादनांच्या कॅटेगरी आणि संपर्क तपशील मोबाईलवर सहज पाहता यावेत, हा या डिझाइनचा उद्देश आहे.</p><p style="color:var(--muted)">दुकानाचा प्रत्यक्ष अनुभव, परवाने, उपलब्ध ब्रँड, वेळा आणि इतर माहिती मालकाकडून पुष्टी झाल्यावर येथे जोडता येईल.</p></div>
+  <div class="about-panel"><h3>तुमच्या शेतीसाठी एकाच ठिकाणी माहिती</h3><p>उत्पादनांची चौकशी करण्यापूर्वी तुमचे पीक, हंगाम आणि गरज सांगा. योग्य उत्पादनासाठी अधिकृत लेबल आणि पात्र कृषी तज्ज्ञांचा सल्ला महत्त्वाचा आहे.</p><ul class="check"><li>मोबाईलवर वापरण्यास सोपी वेबसाइट</li><li>उत्पादनांच्या कॅटेगरी स्पष्टपणे</li><li>WhatsApp आणि कॉल बटण जोडण्याची सुविधा</li><li>मालकाच्या सूचनेनुसार डिझाइनमध्ये बदल</li></ul></div>
+ </div>
+</section>
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="section-head"><h2>आमच्याशी संपर्क साधा</h2><p>दुकानाचा फोन नंबर, अचूक पत्ता आणि वेळा मिळाल्यावर हा विभाग अपडेट करता येईल.</p></div>
+  <div class="contact-grid">
+   <div class="contact-card"><h3>📍 विश्वजीत कृषी सेवा केंद्र</h3><p>वडूज, ता. खटाव, जि. सातारा, महाराष्ट्र</p><p><strong>फोन:</strong> दुकानाचा नंबर येथे जोडायचा आहे</p><p><strong>वेळ:</strong> दुकानाची वेळ निश्चित करायची आहे</p><a class="btn secondary" href="#home">मुख्यपृष्ठावर जा ↑</a></div>
+   <div class="contact-card"><h3>💬 उत्पादनांची चौकशी</h3><p>WhatsApp नंबर मिळाल्यावर ग्राहकांसाठी थेट चौकशी बटण जोडता येईल. सध्या हा नमुना विभाग आहे.</p><a class="btn" href="mailto:hello@example.com?subject=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%9C%E0%A5%80%E0%A4%A4%20%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%80%20%E0%A4%B8%E0%A5%87%E0%A4%B5%E0%A4%BE%20%E0%A4%95%E0%A5%87%E0%A4%82%E0%A4%A6%E0%A5%8D%E0%A4%B0">ईमेलद्वारे चौकशी (डेमो)</a></div>
+  </div>
+ </div>
+</section>
+</main>
+<footer>© 2026 विश्वजीत कृषी सेवा केंद्र, वडूज · ही ग्राहकांच्या अभिप्रायासाठी तयार केलेली डेमो वेबसाइट आहे.</footer>
+</body>
+</html>
